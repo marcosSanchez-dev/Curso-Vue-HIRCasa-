@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos - VUE</title>
+  </head>
+  <body>
+    <!-- Vue tiene el control absoluto del siguiente DIV -->
+    <div id="myApp">
+      <h3>{{quote}}</h3>
+      <blockquote>-{{author}}</blockquote>
+      <p>{{ message }}</p>
+      <button v-on:click="printConsole">
+        Imprime en consola, cambia el numero y pon el MAYUSCULAS el quote
+      </button>
+      <p>{{ number }}</p>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
